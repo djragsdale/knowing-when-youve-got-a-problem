@@ -36,9 +36,11 @@ These metrics should not replace holistic feedback mechanisms, such as 360 Revie
 
 All of these metrics can be calculated manually. Most metrics can be attained through API calls to your chosen project planning and code repository platforms. If you use systems like GitHub, GitLab, Jira, Azure, AWS, etc., all of these metrics can be captured through an API. However, you may still need to regroup or recalculate metrics depending on your specific use cases. You may choose to exclude Pull Requests related to documentation or release processes. You may choose to aggregate data every quarter, instead of following a 2-week sprint or month. I encourage you to look at the data in multiple periods, as well as using multiple statistical calculations. Mean and median are both useful for identifying outliers and anomalies.
 
-### Velocity
+### Ticket Velocity
 
 ### PR Flow Ratio
+
+Flow ratio can be examined per day, but for a single team or a few small teams, I would examine per week or per sprint. Daily flow ratio can be helpful for teams that work in Kanban, have very small tickets, or have a lot of members.
 
 ### PR Time to Merge
 
@@ -48,4 +50,63 @@ All of these metrics can be calculated manually. Most metrics can be attained th
 
 ### PR Lead Time
 
+## Examples
 
+All examples below will consist of a 5-dev team. They use story points to estimate and operate in 2-week sprints.
+
+### Example 1
+
+* Sprint 1
+  * velocity = 62
+  * mean PR total changes = 304
+  * flow ratio = 1.2
+  * time to merge = 2.1
+* Sprint 2
+  * velocity = 20
+  * mean PR total changes = 947
+  * flow ratio = 5.1
+  * time to merge = 5.8
+* Sprint 3
+  * velocity = 86
+  * mean PR total changes = 1091
+  * flow ratio = 0.4
+  * time to merge = 6.1
+* Sprint 4
+  * velocity = 31
+  * mean PR total changes = 827
+  * flow ratio = ?
+  * time to merge = 6.4
+* Sprint 5
+  * velocity = 78
+  * mean PR total changes = 934
+  * flow ratio = ?
+  * time to merge = 6.9
+* Sprint 6
+  * velocity = 44
+  * mean PR total changes = 975
+  * flow ratio = ?
+  * time to merge = 7.1
+
+#### Example 1 analysis
+
+The velocity is sporadic. Sprint 1 is pretty average. We can look to this as our reference point. Subsequent sprints oscillate between low velocity and high velocity. They follow the same pattern for low- and high-flow ratios. Low velocity sprints have more PRs created than are closed, and high velocity sprints are closing more PRs than are opened. The time to merge also indicates that PRs are taking a long time to review. The increasing TTM is very worrisome, and should be addressed immediately. It is likely that PRs created in the second half of a sprint would not get reviewed and merged in time to be completed during the sprint.
+
+### Example 1 causes
+
+Tickets are likely being carried over between sprints. If it weren't for the large PR size and the long Time to Merge, I would say sprints could be too short. Judging by the PR total changes, the cause is that the PRs are too big and reviews are taking too long. It is perfectly fine to have multiple PRs per ticket. Make the changes smaller, and if necessary make the tickets smaller too. Instruct the senior engineers to review PRs for potential opportunities to break them up into smaller, separate PRs. Encourage the team to set aside time daily to review tasks.
+
+### Example 2
+
+#### Example 2 causes
+
+### Example 3
+
+#### Example 3 causes
+
+### Example 4
+
+#### Example 4 causes
+
+### Example 5
+
+#### Example 5 causes
