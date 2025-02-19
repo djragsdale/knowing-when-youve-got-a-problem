@@ -56,36 +56,14 @@ All examples below will consist of a 5-dev team. They use story points to estima
 
 ### Example 1
 
-* Sprint 1
-  * velocity = 62
-  * mean PR total changes = 304
-  * flow ratio = 1.2
-  * time to merge = 2.1
-* Sprint 2
-  * velocity = 20
-  * mean PR total changes = 947
-  * flow ratio = 5.1
-  * time to merge = 5.8
-* Sprint 3
-  * velocity = 86
-  * mean PR total changes = 1091
-  * flow ratio = 0.4
-  * time to merge = 6.1
-* Sprint 4
-  * velocity = 31
-  * mean PR total changes = 827
-  * flow ratio = ?
-  * time to merge = 6.4
-* Sprint 5
-  * velocity = 78
-  * mean PR total changes = 934
-  * flow ratio = ?
-  * time to merge = 6.9
-* Sprint 6
-  * velocity = 44
-  * mean PR total changes = 975
-  * flow ratio = ?
-  * time to merge = 7.1
+| Sprint   | Velocity | Mean PR Total Changes | Flow Ratio | Time To Merge |
+| -------- | -------- | --------------------- | ---------- | ------------- |
+| Sprint 1 | 62       | 304                   | 1.2        | 2.1           |
+| Sprint 2 | 20       | 947                   | 5.1        | 5.8           |
+| Sprint 3 | 86       | 1091                  | 0.4        | 6.1           |
+| Sprint 4 | 31       | 827                   | ?          | 6.4           |
+| Sprint 5 | 78       | 934                   | ?          | 6.9           |
+| Sprint 6 | 44       | 975                   | ?          | 7.1           |
 
 #### Example 1 analysis
 
@@ -93,7 +71,7 @@ The velocity is sporadic. Sprint 1 is pretty average. We can look to this as our
 
 ### Example 1 causes
 
-Tickets are likely being carried over between sprints. If it weren't for the large PR size and the long Time to Merge, I would say sprints could be too short. Judging by the PR total changes, the cause is that the PRs are too big and reviews are taking too long. It is perfectly fine to have multiple PRs per ticket. Make the changes smaller, and if necessary make the tickets smaller too. Instruct the senior engineers to review PRs for potential opportunities to break them up into smaller, separate PRs. Encourage the team to set aside time daily to review tasks.
+Tickets are likely being carried over between sprints. If it weren't for the large PR size and the long Time to Merge, I would say sprints could be too short. Judging by the PR total changes, the cause is that the PRs are too big and reviews are taking too long. It is perfectly fine to have multiple PRs per ticket. Make the changes smaller, and if necessary make the tickets smaller too. Instruct the senior engineers to review PRs for potential opportunities to break them up into smaller, separate PRs. Encourage the team to set aside time daily to review PRs.
 
 ### Example 2
 
