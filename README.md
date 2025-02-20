@@ -75,16 +75,32 @@ Tickets are likely being carried over between sprints. If it weren't for the lar
 
 ### Example 2
 
+Time to merge. Lead time.
+
 #### Example 2 causes
+
+Devs aren't pushing code until it is done.
 
 ### Example 3
 
+Flow ratio. Time to merge.
+
 #### Example 3 causes
+
+Too many open PRs, work is stalled.
 
 ### Example 4
 
+Discussions. Time to merge.
+
 #### Example 4 causes
+
+PRs are taking forever because reviewers are nitpicking or disagreeing. This is likely due to communication issues, either from poorly written task assignments or a lack of clear standards. If it is due to conflict, then settle the disagreement, establish clear principles/goals, and lead your team.
 
 ### Example 5
 
+Discussions. Time to merge.
+
 #### Example 5 causes
+
+Nobody is reviewing, just approving. Team members might be checked out. They also might not feel empowered to provide feedback to peers or superiors. Does your team have in-groups and out-groups? Is there a high power difference between team members? There's also a chance that sprints are too short or velocity is too aggressive to actually review work. If the velocity is too aggressive, the burndown of the sprint is usually still smooth. If the sprint is too short, there can be a steep cliff at the end of the sprint. Investigate the cause to make sure before declaring the cause.
